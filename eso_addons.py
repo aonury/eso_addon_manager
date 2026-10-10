@@ -21,7 +21,8 @@ from pathlib import Path
 BACKUP_DIR = ".eso-addons-backup"
 # ESOUI version we installed; some authors forget to bump ## Version in the zip
 VERSION_MARK = ".eso-addons-version"
-HEADERS = {"User-Agent": "eso-addons-min"}
+# Tells ESOUI who is calling and where to reach the maintainer
+HEADERS = {"User-Agent": "eso_addon_manager/1.0 (+https://github.com/aonury/eso_addon_manager)"}
 CONFIG_PATH = Path.home() / ".config" / "eso-addons" / "config.json"
 CACHE_PATH = Path.home() / ".cache" / "eso-addons" / "filelist.json"
 API = "https://api.mmoui.com/v3/game/ESO"
